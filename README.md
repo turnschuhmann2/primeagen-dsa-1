@@ -1,21 +1,6 @@
-This repository contains a collection of algorithms and data structures implemented in TypeScript. This project follows the (The Last Algorithms Course You'll Need)[https://frontendmasters.com/courses/algorithms/] course from Frontend Masters by ThePrimeagen.
+This repository contains a collection of algorithms and data structures implemented in TypeScript. This project follows the [The Last Algorithms Course You'll Need](https://frontendmasters.com/courses/algorithms/) course from Frontend Masters by ThePrimeagen.
 
-The repository itself is a fork from Main Repository.
-
-### Supported Algorithm
-* Insertion sort
-* Merge sort
-* QuickSort
-* Prim's MST (Adjacency List)
-* Dijkstra's Shortest Path (Adjacency List)
-
-### Supported Data Structures
-* Singly linked list
-* Doubly linked list
-* Queue
-* Stack
-* Graph with Adjacency List
-* Graph with Adjacency Matrix (untested)
+The repository itself is a fork from [Main Repository](https://github.com/ThePrimeagen/kata-machine/).
 
 ### How It Works
 
@@ -28,6 +13,7 @@ yarn install
 ```
 
 edit the `ligma.config.js` file
+
 ```javascript
 module.exports = {
     dsa: [
@@ -39,10 +25,11 @@ module.exports = {
         "DijkstraList",
         "PrimsList",
     ],
-}
+};
 ```
 
 create a day of katas, this will use the list in the `ligma.config.js`.
+
 ```bash
 yarn generate
 ```
@@ -55,19 +42,10 @@ src/day2
 ...
 ```
 
-`yarn generate` will also update the `tsconfig.json` and `jest.config` to point
-the latest `day` folder via tspaths.  This allows us to avoid updating anything
-for testing each day.
+`yarn generate` will also update the `tsconfig.json` and `jest.config` to point the latest `day` folder via tspaths. This allows us to avoid updating anything for testing each day.
 
 #### Testing
-```
-yarn test
-```
 
-I have yet to create a testing strategy for next sets of algorithms, but we
-will get there when i cross that bridge.
-
-### Help wanted
-A simple way to specify test, thinking something like `tests.json` and `cat
-test.json 2> /dev/null` to specify the tests to run.  tests.json wouldn't be
-committed.
+```
+npx jest [name of files to be tested]
+```

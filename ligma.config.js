@@ -20,10 +20,15 @@ module.exports = {
         "CompareBinaryTrees",
         "DFSOnBST",
         "DFSGraphList",
+        "BFSGraphList",
+        "DijkstraList",
         "Trie",
         "BFSGraphMatrix",
         "Map",
         "MinHeap",
+        "RingBuffer",
+        "InsertionSort",
+        "MergeSort",
+        "PrimsList",
     ],
-}
-
+};
